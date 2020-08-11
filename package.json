@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/JorPoon/practice_api/issues"
   },
-  "homepage": "https://github.com/JorPoon/practice_api#readme"
+  "homepage": "https://github.com/JorPoon/practice_api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.4"
+  }
 }
