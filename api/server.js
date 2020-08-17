@@ -4,6 +4,8 @@ const helmet = require("helmet");
 const cors = require("cors");
 const http = require("http")
 
+const router = require("./../routes/router")
+
 const server = express();
 const app = http.createServer(server)
 const io = socketio(app)
