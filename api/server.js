@@ -14,6 +14,16 @@ server.use(helmet());
 server.use(cors());
 server.use(express.json());
 
+io.on("connection", (socket) => {
+    console.log("We have a connection")
+
+    socket.on("disconnect", () => {
+        console.log("User had disconnected")
+    })
+})
+
+server.use(router)
+
 
 
 // server.get("/", (req, res ) => {
