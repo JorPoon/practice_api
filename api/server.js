@@ -5,6 +5,8 @@ const cors = require("cors");
 const http = require("http")
 
 const server = express();
+const app = http.createServer(server)
+const io = socketio(app)
 
 server.use(helmet());
 server.use(cors());
@@ -12,9 +14,9 @@ server.use(express.json());
 
 
 
-server.get("/", (req, res ) => {
-    res.status(200).json({api: "Greetings"})
-})
+// server.get("/", (req, res ) => {
+//     res.status(200).json({api: "Greetings"})
+// })
 
 
 
